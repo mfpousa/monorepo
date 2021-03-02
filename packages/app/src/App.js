@@ -14,7 +14,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <Button>Hello from lib!</Button>
+      <Button>A change!</Button>
     </div>
   );
 }
