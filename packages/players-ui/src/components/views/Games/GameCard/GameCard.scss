@@ -1,0 +1,23 @@
+@import "styles/Mixin.scss";
+
+.GameCard {
+  position: relative;
+  padding: 20px;
+  box-shadow: 0 10px 30px 0 rgba(141, 151, 158, 0.5);
+  background-color: #ffffff;
+
+  @include large {
+    padding: 42px;
+  }
+
+  > .venue-time-info-container {
+    display: flex;
+    flex-direction: row;
+    // background: blue;
+    margin: 25px 0 0 0;
+
+    @include large {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import "styles/Mixin.scss";
+
+.SelectedFilters {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  overflow-x: auto;
+
+  .pill-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 18px 20px 18px 40px;
+    border-radius: 100px;
+    background: #c9cccd;
+
+    .pill-text {
+      display: block;
+      max-width: fit-content;
+      margin-right: 20px;
+      flex: 1;
+      font-family: montserratmedium;
+      font-size: 20px;
+      font-weight: 600;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      text-transform: capitalize;
+    }
+
+    .pill-delete-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+      cursor: pointer;
+    }
+  }
+
+  .clear-filters-btn {
+    width: fit-content;
+    margin-left: 30px;
+    display: block;
+    font-family: montserratmedium;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    background: transparent;
+    cursor: pointer;
+  }
+}

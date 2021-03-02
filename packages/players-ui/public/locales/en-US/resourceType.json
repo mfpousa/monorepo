@@ -1,0 +1,20 @@
+{
+  "BADMINTON": "Badminton",
+  "BASEBALL": "Baseball",
+  "BASKETBALL": "Basketball",
+  "BOXING": "Boxing",
+  "CRICKET": "Cricket",
+  "FIELD_HOCKEY": "Field Hockey",
+  "FOOTBALL": "Football",
+  "FUTSAL": "Futsal",
+  "GOLF": "Golf",
+  "HANDBALL": "Handball",
+  "ICE_HOCKEY": "Ice Hockey",
+  "NETBALL": "Netball",
+  "PADEL": "Padel",
+  "RUGBY": "Rugby",
+  "SQUASH": "Squash",
+  "TABLE_TENNIS": "Table Tennis",
+  "TENNIS": "Tennis",
+  "VOLLEYBALL": "Volleyball"
+}

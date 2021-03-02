@@ -1,0 +1,240 @@
+@import "styles/Mixin.scss";
+
+.Venues {
+  transform: skew(0deg, 8deg);
+  background-color: #f9f9f9;
+  padding: 3rem 0;
+
+  @include small {
+    padding: 3rem 0;
+  }
+
+  @include medium {
+    padding: 5rem 0;
+  }
+
+  @include large {
+    padding: 3rem 0;
+  }
+
+  @include extraLarge {
+    padding: 3rem 0;
+  }
+
+  > .wrapper {
+    transform: skew(0deg, -8deg);
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 767px;
+    padding: 0 19px;
+    margin: 0 auto;
+
+    @include medium {
+      min-width: 768px;
+      max-width: 991px;
+    }
+
+    @include large {
+      min-width: 992px;
+      max-width: 1199px;
+      padding: 0 120px;
+    }
+
+    @include extraLarge {
+      box-sizing: border-box;
+      min-width: 1200px;
+      max-width: 1440px;
+      padding: 0 120px;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    > .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      @include large {
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      > .header-image {
+        position: relative;
+        width: 80vw;
+        height: 40vh;
+
+        @include large {
+          height: 534px;
+          width: 70vw;
+        }
+
+        > .venues-particles {
+          position: absolute;
+          z-index: -2;
+          top: 0;
+          left: 50px;
+          width: 68%;
+          height: 80%;
+          background-image: url("/images/venues-section-particles.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+
+          @include small {
+            width: 65%;
+            height: 259px;
+            left: 85px;
+          }
+
+          @include medium {
+            height: 300px;
+            left: 15vw;
+          }
+
+          @include large {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+          }
+
+          @include extraLarge {
+            left: -34px;
+          }
+        }
+
+        > .venues-image {
+          margin: 0 auto;
+          z-index: 3;
+          width: 100%;
+          height: 100%;
+          background-image: url("/images/3-venues-photos.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+      }
+
+      > .description {
+        width: 100vw;
+        margin-bottom: 60px;
+        margin-top: 10px;
+
+        @include small {
+          width: 24rem;
+        }
+
+        @include large {
+          width: 50%;
+          text-align: left;
+        }
+
+        > .title {
+          font-family: montserratblack;
+          font-size: 40px;
+          font-weight: 800;
+          color: black;
+          margin-bottom: 20px;
+
+          @include medium {
+            font-size: 56px;
+            font-weight: 900;
+          }
+        }
+
+        > .text {
+          font-family: montserratmedium;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+          color: black;
+          width: 290px;
+          margin: 0 auto;
+
+          @include medium {
+            font-family: montserratsemi_bold;
+            font-weight: 600;
+            width: 100%;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .featured {
+      margin-top: 12px;
+      display: flex;
+      flex-direction: column;
+
+      > .title {
+        font-family: montserratbold;
+        font-size: 24px;
+        font-weight: bold;
+
+        @include medium {
+          font-family: montserratextra_bold;
+          font-size: 40px;
+          font-weight: 800;
+        }
+      }
+
+      > .venues {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+
+        @include large {
+          margin-bottom: 40px;
+        }
+      }
+
+      & .card {
+        margin-right: 20px;
+        margin-top: 40px;
+      }
+
+      & .SliderContainer {
+        padding-bottom: 40px;
+        padding-left: 19px;
+        margin: 0 -19px;
+
+        .book {
+          display: none;
+        }
+      }
+
+      > .links {
+        grid-template-columns: 1fr;
+        border-top: 2px solid black;
+        justify-content: space-between;
+        padding-top: 2em;
+        padding-bottom: 4em;
+
+        @include medium {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        > a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          justify-self: center;
+          box-sizing: border-box;
+          min-width: 17rem;
+          max-width: 17rem;
+          height: 46px;
+          margin: 0 auto;
+
+          @include medium {
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+}

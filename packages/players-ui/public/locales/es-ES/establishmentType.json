@@ -1,0 +1,9 @@
+{
+  "UNKNOWN": "Desconocido",
+  "PUBLIC_CLUB": "Club Público",
+  "PRIVATE_CLUB": "Club Privado",
+  "LEISURE_CENTRE": "Institución Pública",
+  "UNIVERSITY_OR_SCHOOL": "Universidad o Colegio",
+  "NEIGHBORHOOD": "Urbanización",
+  "HOTEL": "Hotel"
+}

@@ -1,0 +1,26 @@
+@import "styles/Mixin.scss";
+
+.filter-selector-group {
+  border-bottom: solid 1px #e4e6e6;
+  padding-bottom: 30px;
+  margin-top: 30px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    @include large {
+      grid-template-columns: repeat(2, 273px);
+      column-gap: 30px;
+    }
+  }
+}

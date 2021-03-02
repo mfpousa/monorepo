@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40">
+    <defs>
+        <path id="2mjtrdykza" d="M24.83 13.015l-2.642-6.427L5.27 13.541l5.82 14.164v5.236h18.29V13.014H24.83zm-3.532-4.3l1.768 4.3H11.09v10.398L7.4 14.428l13.9-5.713zm6.452 18.25H12.722v-1.047H27.75v1.047zm0-5.907v2.054c-1.665-.98-2.642-1.66-3.295-1.66-.435 0-3.211 1.689-3.211 1.689-2.395-1.36-3.13-2.224-4.355-2.504-1.065-.244-3.225 1.142-4.167 1.795v-7.787H27.75l.001 6.413zm-3.703-2.436c0 1.098-.89 1.986-1.987 1.986s-1.987-.888-1.987-1.986c0-1.098.89-1.987 1.987-1.987 1.098 0 1.987.892 1.987 1.987z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g transform="translate(-160 -883) translate(120 539) translate(40 293) translate(0 1) translate(0 50)">
+                            <mask id="0uznvv383b" fill="#fff">
+                                <use xlink:href="#2mjtrdykza"/>
+                            </mask>
+                            <use fill="#000" fill-rule="nonzero" xlink:href="#2mjtrdykza"/>
+                            <g fill="currentColor" mask="url(#0uznvv383b)">
+                                <path d="M0 0H39.529V39.529H0z"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,50 @@
+image: node:10.15.0
+pipelines:
+  default:
+    - step:
+        name: Compile and Test
+        script:
+          - npm test
+  branches:
+    develop:
+      - step:
+          name: Test
+          script:
+            - npm test
+      - step:
+          name: Build
+          script:
+            - ENV="dev" npm run build
+          artifacts:
+            - dist/**
+      - step:
+          image: google/cloud-sdk:latest
+          name: Deploy
+          deployment: develop
+          script:
+            - export IMAGE_NAME="eu.gcr.io/$GCLOUD_PROJECT/players-ui"
+            - echo $GCLOUD_API_KEYFILE > ~/.gcloud-api-key.json
+            - gcloud auth activate-service-account --key-file ~/.gcloud-api-key.json
+            - gcloud config set project $GCLOUD_PROJECT
+            - gcloud builds submit --tag $IMAGE_NAME
+            - gcloud beta run deploy players-ui --image $IMAGE_NAME --platform managed --region europe-west1
+  custom:
+    deploy:
+      - variables:
+          - name: environment
+      - step:
+          name: Build
+          script:
+            - ENV="dev" npm run build
+          artifacts:
+            - dist/**
+      - step:
+          image: google/cloud-sdk:latest
+          name: Deploy
+          script:
+            - export IMAGE_NAME="eu.gcr.io/$GCLOUD_PROJECT/players-ui"
+            - echo $GCLOUD_API_KEYFILE > ~/.gcloud-api-key.json
+            - gcloud auth activate-service-account --key-file ~/.gcloud-api-key.json
+            - gcloud config set project $GCLOUD_PROJECT
+            - gcloud builds submit --tag $IMAGE_NAME
+            - gcloud beta run deploy players-ui --image $IMAGE_NAME --platform managed --region europe-west1

@@ -1,0 +1,12 @@
+{
+  "title": "INSTALACIONES DEPORTIVAS",
+  "description": "Elija y reserve un centro deportivo donde practicar sus deportes favoritos.",
+  "loadMore": "Cargar más",
+  "textFieldPlaceholder": "Buscar centros deportivos por su nombre ",
+  "sortBy": "Ordenar por:",
+  "filters": "Filtros",
+  "clearFilters": "Limpiar filtros",
+  "addedToFavorite": "Tus Favoritos",
+  "map": "Ubicación",
+  "grid": "Mostrar ítem como iconos o listas"
+}

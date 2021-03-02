@@ -1,0 +1,11 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "test": "lerna run transpile --since origin/master && lerna run test --since origin/master"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

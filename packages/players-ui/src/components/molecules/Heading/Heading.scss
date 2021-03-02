@@ -1,0 +1,19 @@
+.Heading {
+  flex: 1;
+  margin-bottom: 40px;
+
+  > .title {
+    font-family: montserratextra_bold;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  > .description {
+    font-family: montserratsemi_bold;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}

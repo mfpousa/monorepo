@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <path id="fueekpuuia" d="M18.078 12.256L15 6l-3.079 6.256L5 13.26l5.02 4.867L8.846 25 15 21.753l6.154 3.246-1.175-6.873L25 13.26l-6.922-1.003zm-5.063 1.504L15 9.727l1.985 4.033 4.467.647-3.24 3.142.758 4.438L15 19.893l-3.97 2.094.758-4.438-3.24-3.142 4.467-.647z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g transform="translate(-1092 -2588) translate(101 120) translate(80 2324) translate(0 89) translate(751 55) translate(160)">
+                                <mask id="41i2twf1ub" fill="#fff">
+                                    <use xlink:href="#fueekpuuia"/>
+                                </mask>
+                                <use fill="#979797" fill-rule="nonzero" xlink:href="#fueekpuuia"/>
+                                <g fill="#000" mask="url(#41i2twf1ub)">
+                                    <path d="M0 0H30V30H0z"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

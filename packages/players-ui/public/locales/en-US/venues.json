@@ -1,0 +1,12 @@
+{
+  "title": "SPORT VENUES",
+  "description": "Browse and book a venue to practice your favourite sports.",
+  "loadMore": "Load more",
+  "textFieldPlaceholder": "Search sport venues by name",
+  "sortBy": "Sort by:",
+  "filters": "Filters",
+  "clearFilters": "Clear filters",
+  "addedToFavorite": "Your favorites",
+  "map": "Location",
+  "grid": "Show item as icons or lists"
+}

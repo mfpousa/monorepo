@@ -1,0 +1,140 @@
+@import "styles/Mixin.scss";
+
+.GetStarted {
+  transform: skew(0deg, 8deg);
+  background-color: #f9f9f9;
+
+  @include medium {
+    padding: 2rem 0px;
+  }
+
+  @include large {
+    padding: 5rem 0;
+  }
+
+  @include extraLarge {
+    padding: 6rem 0;
+  }
+
+  > .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skew(0deg, -8deg);
+    padding: 10rem 20px;
+    overflow: hidden;
+
+    @include small {
+      padding: 10rem 20px;
+    }
+
+    @include medium {
+      overflow-x: hidden;
+      padding: 13rem 20px;
+    }
+
+    @include large {
+      padding: 9rem 20px;
+    }
+
+    @include extraLarge {
+      padding: 12rem 20px;
+      overflow: hidden;
+    }
+
+    > .basketball-image {
+      position: absolute;
+      width: 100%;
+      height: 40vh;
+      background-image: url("/images/basketball.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      @include small {
+        width: 100%;
+        height: 60vw;
+      }
+
+      @include large {
+        height: 50vw;
+      }
+
+      @include extraLarge {
+        max-width: 1006px;
+        max-height: 728px;
+      }
+    }
+
+    > .container {
+      width: 100%;
+      height: 100%;
+      opacity: 0.9;
+      box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      padding: 3.125rem;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      text-align: center;
+      position: relative;
+
+      @include small {
+        padding: 50px;
+        width: 404px;
+        height: 437px;
+      }
+
+      @include medium {
+        width: 27.313rem;
+        height: 27.313rem;
+        margin: 0;
+        padding: 60px;
+      }
+
+      > .title {
+        font-family: montserratextra_bold;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 1.25;
+        letter-spacing: normal;
+        color: black;
+        text-transform: uppercase;
+      }
+
+      > .description {
+        font-family: montserratregular;
+        height: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+        margin: 1.25rem 0;
+
+        @include small {
+          width: 284px;
+          font-size: 18px;
+        }
+      }
+
+      > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        height: 46px;
+        &:last-child {
+          margin: 1.25rem 0 0 0;
+        }
+
+        @include small {
+          height: 60px;
+        }
+
+        @include medium {
+          padding: 19px 0;
+        }
+      }
+    }
+  }
+}

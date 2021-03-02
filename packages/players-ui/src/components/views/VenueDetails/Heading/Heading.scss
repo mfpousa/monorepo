@@ -1,0 +1,85 @@
+.Heading {
+  > .title {
+    font-family: montserratblack;
+    font-size: 56px;
+    font-weight: 900;
+  }
+
+  > .subtitle {
+    margin-top: 20px;
+    font-family: montserratsemi_bold;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  > .slideshow {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+    .Icon:first-of-type {
+      margin-right: 3.5rem;
+    }
+
+    .Icon:last-of-type {
+      margin-left: 3.5rem;
+    }
+
+    > .images {
+      flex: 1;
+      height: 21.5rem;
+      position: relative;
+
+      > .image {
+        box-sizing: border-box;
+        width: var(--size);
+        height: var(--size);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+
+        border: 0.6rem solid white;
+        box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.15);
+        padding: 1rem;
+        background: black;
+
+        &:nth-of-type(1) {
+          --size: 14rem;
+          left: 7rem;
+        }
+
+        &:nth-of-type(2) {
+          --size: 18.5rem;
+          left: calc(9.25rem + 10%);
+        }
+
+        &:nth-of-type(3) {
+          --size: 21.5rem;
+          left: 50%;
+          box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.2);
+          z-index: 3;
+        }
+
+        &:nth-of-type(4) {
+          --size: 18.5rem;
+          left: calc(-9.25rem + 90%);
+          z-index: 2;
+        }
+
+        &:nth-of-type(5) {
+          --size: 14rem;
+          left: calc(-7rem + 100%);
+          z-index: 1;
+        }
+      }
+    }
+
+    > .controls {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+  }
+}

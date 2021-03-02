@@ -1,0 +1,85 @@
+@import "styles/Mixin.scss";
+
+.ReviewCard {
+  display: grid;
+  height: auto;
+  margin-bottom: 20px;
+  margin-right: 48px;
+  padding: 10px;
+  background-color: #fbfbfb;
+
+  @include medium {
+    padding: 40px;
+    grid-template-rows: 1fr auto;
+  }
+
+  > .review-card-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    height: auto;
+
+    @include medium {
+      max-height: 75px;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    > .user-info-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      @include medium {
+        flex-direction: row;
+        margin-right: auto;
+      }
+
+      > .user-avatar {
+        width: 60px;
+        height: 60px;
+        border: 2px solid black;
+        margin-right: auto;
+
+        .Icon {
+          margin-left: 0.5rem;
+        }
+      }
+
+      > .user-name {
+        margin-left: 40px;
+        font-weight: 600;
+        font-size: 18px;
+        font-family: "montserratbold";
+      }
+    }
+
+    > .rating-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      > ul {
+        display: flex;
+        flex-direction: row;
+        > li {
+          list-style: none;
+          margin-right: 10px;
+        }
+      }
+      > .rating {
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+  }
+
+  > .review-card-body {
+    > .review {
+      border-left: 2px solid black;
+      padding-left: 20px;
+      font-size: 16px;
+      font-family: "montserratmedium";
+    }
+  }
+}

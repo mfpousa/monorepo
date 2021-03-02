@@ -1,0 +1,9 @@
+{
+  "UNKNOWN": "Unknown",
+  "PUBLIC_CLUB": "Public Venue",
+  "PRIVATE_CLUB": "Private Venue",
+  "LEISURE_CENTRE": "Leisure Centres",
+  "UNIVERSITY_OR_SCHOOL": "University or School",
+  "NEIGHBORHOOD": "Neighborhood",
+  "HOTEL": "Hotel"
+}

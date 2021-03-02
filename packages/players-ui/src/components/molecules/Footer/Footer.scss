@@ -1,0 +1,173 @@
+@import "styles/Mixin.scss";
+
+.Footer {
+  margin-top: 200px;
+  height: 593px;
+  .slice-container {
+    background-color: black;
+    position: relative;
+    z-index: 1;
+    transform: skew(0deg, 8deg);
+    padding: 14rem 0;
+
+    @include medium {
+      padding: 15rem 0;
+    }
+
+    @include extraLarge {
+      padding: 13rem 0;
+    }
+  }
+
+  .wrapper {
+    background: black;
+    position: relative;
+    z-index: 2;
+    margin-top: -22rem;
+    padding: 0 39px 62px 39px;
+
+    @include small {
+      margin-top: -21.5rem;
+    }
+
+    @include medium {
+      margin-top: -5em;
+    }
+
+    @include large {
+      margin-top: -5rem;
+    }
+
+    @include extraLarge {
+      padding: 149px 120px 62px 120px;
+      margin-top: -11rem;
+    }
+
+    > .logo {
+      font-family: montserratblack_italic;
+      font-size: 40px;
+      font-weight: 900;
+      display: inline-block;
+      font-style: italic;
+      color: white;
+      margin-bottom: 20px;
+      padding: 40px 0 0 50px;
+
+      @include medium {
+        padding: 0 0 0 50px;
+      }
+
+      @include extraLarge {
+        padding-left: 0;
+      }
+    }
+
+    > .links {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+
+      @include medium {
+        flex-direction: row;
+        margin-bottom: 0;
+        padding: 0 50px;
+      }
+
+      @include large {
+        justify-content: space-between;
+        margin-bottom: 0;
+      }
+
+      @include extraLarge {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      > .social {
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+        padding: 0 0 61px 50px;
+
+        @include medium {
+          padding: 0;
+        }
+
+        > a {
+          border: 1px solid white;
+          color: white;
+          width: 40px;
+          height: 40px;
+          vertical-align: middle;
+          justify-content: center;
+          align-items: center;
+
+          & + a {
+            margin-left: 20px;
+          }
+        }
+      }
+
+      > .divider {
+        content: "";
+        margin: 0 auto;
+        border: 1px solid white;
+        background-color: white;
+        width: 100%;
+
+        @include medium {
+          display: none;
+        }
+      }
+
+      > .social,
+      .other {
+        display: flex;
+        align-self: flex-start;
+
+        @include large {
+          align-self: center;
+        }
+      }
+
+      > .other {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        padding: 0 50px;
+
+        @include medium {
+          margin-left: 3em;
+          flex-direction: row;
+          padding: 0 10px;
+        }
+
+        > a {
+          margin-top: 60px;
+          font-family: montserratsemi_bold;
+          font-size: 14px;
+          font-weight: 500;
+          color: white;
+
+          @include medium {
+            margin-top: 0;
+          }
+
+          & + a {
+            justify-content: end;
+            margin: 1.11em 0 0 0;
+            padding: 0;
+            border-left: none;
+
+            @include medium {
+              margin-top: 0;
+              margin-left: 20px;
+              padding-left: 20px;
+              border-left: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

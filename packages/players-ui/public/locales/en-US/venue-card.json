@@ -1,0 +1,11 @@
+{
+  "featured": "Featured",
+  "noName": "No name",
+  "noDescription": "No description",
+  "bookNow": "Book now",
+  "rating": "Ratings",
+  "addToFavourite": "Add to favorites",
+
+  "ratingToolTip": "Average rating based on players reviews",
+  "addToFavouriteToolTip": "Click to add to your favorites venues"
+}

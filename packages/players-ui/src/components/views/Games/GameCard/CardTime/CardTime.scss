@@ -1,0 +1,78 @@
+@import "styles/Mixin.scss";
+
+.CardTime {
+  width: 100%;
+
+  > .info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    border-bottom: solid 1px #c9cccd;
+    padding: 0;
+    padding-bottom: 25px;
+
+    @include large {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 20px;
+      padding: 45px 0;
+    }
+
+    > .info-item {
+      width: 55%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+
+      @include large {
+        width: auto;
+        text-overflow: inherit;
+        white-space: inherit;
+        overflow: inherit;
+      }
+
+      &:last-child {
+        width: 100%;
+      }
+
+      > .distance {
+        display: flex;
+        align-items: center;
+
+        @include large {
+          display: none;
+          margin-top: 25px;
+        }
+
+        > p {
+          margin-left: 20px;
+          font-family: montserratregular;
+          font-size: 16px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.25;
+          letter-spacing: normal;
+        }
+      }
+
+      > .info-icon {
+        margin-right: 20px;
+      }
+
+      > .info-text {
+        display: block;
+        flex: 1;
+        text-align: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: montserratbold;
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import "styles/Mixin.scss";
+
+.TermsAndConditions {
+  > .wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    height: 350px;
+    max-width: 767px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+
+    @include medium {
+      min-width: 576px;
+      max-width: 767px;
+      margin-top: 3.5rem;
+    }
+
+    @include large {
+      min-width: 992px;
+      padding: 0 20px;
+    }
+
+    @include extraLarge {
+      min-width: 1180px;
+      max-width: 1440px;
+      padding: 0 120px;
+    }
+  }
+}

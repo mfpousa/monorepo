@@ -1,0 +1,23 @@
+{
+  "iBook": "iBook",
+  "wePlay": "WePlay",
+  "areYouVenue": "Are you a sport centre?",
+  "games": "Games",
+  "venues": "Venues",
+  "signUp": "Sign Up",
+  "login": "Login",
+  "logOut": "Log Out",
+  "localeFlag": "Locale language flag",
+  "englishFlag": "English language flag",
+  "spanishFlag": "Spanish language flag",
+
+  "logoToolTip": "Your sport your way, look for people to play with, create games and challenge your friends, books courts and sport clubs in a few clicks",
+  "areYouVenueToolTip": "If you're an sport centre, access to the venues portal to start managing your organization",
+  "gamesToolTip": "Create a game and wait for others to join, challenge your friends, extend the experience of the courts to the internet",
+  "venuesToolTip": "The largest and most complete directory of sports facilities in the world, find your favorite sport clubs, get all the information, book in a few clicks",
+  "signUpToolTip": "Have you register? Register quickly through your preferred social network, or create your account in just a few steps",
+  "loginToolTip": "Login quickly through your favourite social network or with your username and password",
+  "logOutToolTip": "Have to leave? Click here to log out instantly and come back later",
+  "selectForEnglishToolTip": "Select for English",
+  "selectForSpanishToolTip": "Select for Spanish"
+}

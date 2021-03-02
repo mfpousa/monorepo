@@ -1,0 +1,72 @@
+@import "styles/Mixin.scss";
+
+.TextField {
+  width: 100%;
+  box-sizing: border-box;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 1rem;
+
+  @include small {
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  @include large {
+    height: 60px;
+    padding: 1rem;
+  }
+
+  > input {
+    border: none;
+    outline: none;
+    background: none;
+    flex: 1;
+
+    font-family: montserratmedium;
+    font-size: 18px;
+    font-weight: 500;
+    color: #5C6466;
+
+    &:not(:placeholder-shown) {
+      color: black;
+    }
+  }
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
+
+  input:-webkit-autofill:focus {
+    -webkit-text-fill-color: black;
+  }
+
+  > button {
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  > .icon {
+    display: none;
+
+    @include small {
+      display: flex;
+      font-family: montserratextra_bold;
+      font-size: 30px;
+      font-weight: 800;
+      width: 46px;
+      height: 46px;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    @include large {
+      width: 1.7rem;
+      height: 1.7rem;
+      padding: 0;
+    }
+  }
+}

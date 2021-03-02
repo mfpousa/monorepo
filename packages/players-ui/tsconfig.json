@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2017",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "paths": {
+      "ENV": ["env/env.dev.js"]
+    },
+    "jsx": "react"
+  },
+  "exclude": ["node_modules", "**/node_modules/*", "dist"]
+}

@@ -1,0 +1,51 @@
+@import "styles/Mixin.scss";
+
+.SortDropdown {
+  box-sizing: border-box;
+  height: 46px;
+
+  @include small {
+    min-width: 210px;
+  }
+
+  @include large {
+    height: 60px;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #fff;
+
+  > .label {
+    font-family: montserratmedium;
+    font-size: 18px;
+    color: #253237;
+
+    @include large {
+      margin-right: 1.2rem;
+    }
+  }
+
+  > .selection {
+    font-family: montserratbold;
+    font-size: 18px;
+  }
+
+  > .icon {
+    font-family: montserratextra_bold;
+    font-size: 30px;
+    font-weight: 800;
+    width: 1.7rem;
+    height: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+
+    @include large {
+      margin-left: 2.5rem;
+    }
+  }
+}

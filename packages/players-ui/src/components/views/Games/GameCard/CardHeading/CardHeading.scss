@@ -1,0 +1,118 @@
+@import "styles/Mixin.scss";
+
+.CardHeader {
+  display: flex;
+  width: 100%;
+
+  > .icon {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+
+    @include large {
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+    }
+
+    svg.resource-type {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      overflow: hidden;
+    }
+  }
+
+  > .info {
+    flex: 1;
+    overflow: hidden;
+
+    > .title {
+      width: 100%;
+      display: block;
+      font-family: montserratbold;
+      font-size: 40px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.25;
+      letter-spacing: normal;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      text-transform: capitalize;
+
+      @include large {
+        width: 65%;
+        margin-bottom: 15px;
+      }
+    }
+
+    > .bottomInfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > .maxPersons {
+        width: auto;
+        display: flex;
+        align-items: center;
+
+        > .number {
+          display: block;
+          font-family: montserratblack;
+          font-size: 30px;
+          font-weight: 900;
+          font-stretch: normal;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: 0;
+          color: #5c6466;
+
+          @include large {
+            font-size: 40px;
+          }
+        }
+
+        > .personIcon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          color: #5c6466;
+
+          @include large {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+
+      > .distance {
+        display: none;
+
+        @include large {
+          display: flex;
+          align-items: center;
+          margin-top: 25px;
+        }
+
+        > p {
+          margin-left: 20px;
+          font-family: montserratregular;
+          font-size: 16px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.25;
+          letter-spacing: normal;
+        }
+      }
+    }
+  }
+}

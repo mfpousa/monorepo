@@ -1,0 +1,73 @@
+.FilterSectionLg {
+  display: flex;
+  margin-bottom: 1.5rem;
+
+  > .block {
+    height: 160px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+
+    & + .block {
+      margin-left: 1.2rem;
+    }
+
+    &.first {
+      flex: 1;
+
+      > .create-game-btn {
+        width: 180px;
+        height: 60px;
+        margin-bottom: auto;
+        padding: 20px 0;
+        outline: none;
+        border: none;
+        font-family: montserratmedium;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        cursor: pointer;
+        background-color: #ffbd00;
+      }
+    }
+
+    &.second {
+      > .favorites-toggle {
+        background: #ffffff;
+        width: 50%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-left: auto;
+        margin-bottom: auto;
+      }
+    }
+
+    &.third {
+      > .display-mode-switch {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+
+        display: flex;
+        margin-bottom: auto;
+
+        > li {
+          flex: 1;
+          height: 60px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+
+          &.selected {
+            background: black;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

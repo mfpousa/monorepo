@@ -1,0 +1,11 @@
+{
+  "featured": "Destacado",
+  "noName": "Sin nombre",
+  "noDescription": "Sin descripción",
+  "bookNow": "Reservar ahora",
+  "rating": "Calificaciones",
+  "addToFavourite": "Agregar a favoritos",
+
+  "ratingToolTip": "Media de puntaje basada en las reseñas de los jugadores",
+  "addToFavouriteToolTip": "Haz click para añadir a tus instalaciones favoritas"
+}

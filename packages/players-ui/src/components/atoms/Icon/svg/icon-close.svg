@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30">
+    <defs>
+        <path id="arkotyqhxa" d="M23 9.667L17.667 15 23 20.333 20.333 23 15 17.667 9.667 23 7 20.333 12.333 15 7 9.667 9.667 7 15 12.333 20.333 7z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-250 -554) translate(120 539) translate(130 15)">
+                    <mask id="rjxxzr2kmb" fill="#fff">
+                        <use xlink:href="#arkotyqhxa"/>
+                    </mask>
+                    <use fill="#979797" fill-rule="nonzero" xlink:href="#arkotyqhxa"/>
+                    <g fill="currentColor" mask="url(#rjxxzr2kmb)">
+                        <path d="M0 0H30V30H0z"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

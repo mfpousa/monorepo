@@ -1,0 +1,195 @@
+.FeaturedCard {
+  position: relative;
+  box-sizing: border-box;
+  height: 534px;
+  background-color: #ffffff;
+  padding: 20px;
+  padding-bottom: 0;
+  cursor: pointer;
+
+  display: flex;
+  flex-flow: column;
+
+  &.slim {
+    min-width: 17rem;
+    max-width: 17rem;
+    > .image .info {
+      display: contents;
+    }
+  }
+
+  &:hover {
+    > .image .info {
+      position: relative;
+      left: 295px;
+      top: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      font-weight: bold;
+      width: 30px;
+      height: 30px;
+      background-color: #ffbd00;
+      border-radius: 50%;
+      color: #000;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    > .image .info svg {
+      position: relative;
+      left: 3px;
+    }
+    &.slim {
+      > .image .info {
+        left: 180px;
+        top: 205px;
+      }
+    }
+  }
+
+  > .image {
+    height: 332px;
+    background-image: url("/images/tennis-court.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    > .venue-type,
+    > .featured {
+      font-size: 20px;
+      font-weight: 600;
+      font-family: montserratsemi_bold;
+      box-sizing: border-box;
+      position: relative;
+      left: -10px;
+      padding: 0.9em 2rem;
+      filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
+      background: linear-gradient(
+        110deg,
+        var(--background-color) 86%,
+        transparent 86%
+      );
+      top: 1.25rem;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #253237;
+      }
+    }
+
+    > .venue-type {
+      --background-color: white;
+      width: 15rem;
+    }
+
+    > .featured {
+      --background-color: black;
+      display: inline-block;
+      margin-top: 1.5rem;
+      color: #ffbd00;
+    }
+
+    > .distance {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      padding: 0.75rem 1.3125rem;
+
+      color: white;
+      background: rgba(0, 0, 0, 0.4);
+
+      > * {
+        vertical-align: middle;
+      }
+
+      > span {
+        margin-left: 10px;
+        font-family: montserratmedium;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  > .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    flex: 1;
+  }
+
+  > .description {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1em;
+  }
+
+  > .tail {
+    display: flex;
+    border-top: 1px solid black;
+    justify-content: space-between;
+    padding-top: 1.25em;
+    padding-bottom: 20px;
+    max-height: 40px;
+
+    > .rating {
+      font-size: 18px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+
+      > span {
+        margin-right: 0.5rem;
+        height: 1rem;
+      }
+
+      > .Icon {
+        margin-bottom: -1px;
+      }
+    }
+    > .book {
+      display: flex;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      left: 0;
+      bottom: -80px;
+      width: 100%;
+      height: 80px;
+      background: white;
+      padding: 0 20px 20px 20px;
+      box-sizing: border-box;
+      transform-origin: center center;
+
+      > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+        &.isNotAvailable {
+          background: #f8f8f8;
+          color: #8e8e93;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}

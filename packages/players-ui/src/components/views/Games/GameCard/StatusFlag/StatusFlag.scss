@@ -1,0 +1,89 @@
+@import "styles/Mixin.scss";
+
+.InfoFlag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right: -10px;
+  min-width: 105px;
+  height: 40px;
+  background: #253237;
+  padding: 0 10px;
+  max-width: 164px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+
+  @include large {
+    padding: 0 20px;
+    max-width: 200px;
+    min-width: 120px;
+    height: 60px;
+  }
+
+  > .status {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    @include large {
+      width: 24px;
+      height: 24px;
+    }
+
+    &.distant {
+      background: #13e94f;
+    }
+    &.close {
+      background: #f67a2b;
+    }
+    &.nearby {
+      background: #db0000;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-top: 10px solid #000;
+      border-right: 10px solid transparent;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -15px;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 40px solid #253237;
+      border-left: 15px solid transparent;
+
+      @include large {
+        left: -25px;
+        border-bottom: 60px solid #253237;
+        border-left: 25px solid transparent;
+      }
+    }
+  }
+
+  > p {
+    color: #fff;
+    font-family: montserratbold;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    text-overflow: ellipsis;
+    flex: 1;
+    margin-left: 10px;
+
+    @include large {
+      margin-left: 24px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "iBook": "iBook",
+  "wePlay": "WePlay",
+  "areYouVenue": "Instalación deportiva?",
+  "games": "Juegos",
+  "venues": "Instalaciones",
+  "signUp": "Login",
+  "login": "Entrar",
+  "logOut": "Salir",
+  "localeFlag": "Bandera del idioma local",
+  "englishFlag": "Bandera del idioma ingles",
+  "spanishFlag": "Bandera del idioma español",
+
+  "logoToolTip": "Tu deporte a tu manera, busca personas con quien jugar, crear juegos y reta a tus amigos, reserva canchas e instalaciones en pocos clicks",
+  "areYouVenueToolTip": "Si eres una instalación deportiva, accede al portal de instalaciones para comenzar a manejar tu organización",
+  "gamesToolTip": "Crea un juego y espera que otros se apunten, reta a tus amigos, extiende la experiencia de las canchas a internet",
+  "venuesToolTip": "El mayor y más completo directorio de instalaciones deportivas del mundo, busca tus centro favoritos, encuenta toda la información, reserva en poco clicks",
+  "signUpToolTip": "Todavía no te has registrado? Regístrate rápidamente a través de tu red social preferida, ó crea tu cuenta en poco pasos.",
+  "loginToolTip": "Ingresa rápidamente a través de tu red social o con tu usuario y contraseña",
+  "logOutToolTip": "Ya has terminado? Haz click aquí para cerrar tu sesión y volver más tarde",
+  "selectForEnglishToolTip": "Seleccionar para Ingles",
+  "selectForSpanishToolTip": "Seleccionar para Español"
+}

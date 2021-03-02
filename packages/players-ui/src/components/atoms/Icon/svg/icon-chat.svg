@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 44 44">
+    <defs>
+        <path id="3db0a1nhfa" d="M27.868 14.34V29.14h-10.91l-6.144 5.421v-5.421H7.2V14.34h20.668zM36 8.64v14.799h-3.162v5.42l-3.276-2.89V12.697h-14.23V8.64H36zM22.504 22.671h-9.94v1.645h9.94V22.67zm1.807-3.508H10.758v1.645H24.31v-1.645z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <g transform="translate(-696 -1273) translate(101 120) translate(80 792) translate(0 90) translate(510 40) translate(0 226) translate(5.4 5.4)">
+                                    <mask id="tbnubnoleb" fill="#fff">
+                                        <use xlink:href="#3db0a1nhfa"/>
+                                    </mask>
+                                    <use fill="#000" fill-rule="nonzero" xlink:href="#3db0a1nhfa"/>
+                                    <g fill="currentColor" mask="url(#tbnubnoleb)">
+                                        <path d="M0 0H43.2V43.2H0z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+{
+  "title": "Juegos en Vivo",
+  "description": "Busca personas que hayan creado juegos y únete, o create el tuyo propio e invita a otros.",
+  "loadMore": "Cargar Más",
+  "createGameBtn": "Crear Juego",
+  "textFieldPlaceholder": "Busca juegos, personas o centros deportivos",
+  "sortDropdown": "Ordenar por",
+  "filterBtn": "Filtros",
+  "playersBtnText": "Jugadores",
+  "genderText": "Género",
+  "venueTag": "Centro deportivo",
+  "levels": "Niveles",
+  "daysIn": "En",
+  "daysTextPlural": "días",
+  "daysTextSingular": "día",
+  "daysTextToday": "Hoy",
+  "spotsRemainingText": "puestos disponibles",
+  "emptyText": "Vacío",
+  "joinBtnText": "Unirse",
+  "clearFiltersBtn": "Limpiar filtros"
+}

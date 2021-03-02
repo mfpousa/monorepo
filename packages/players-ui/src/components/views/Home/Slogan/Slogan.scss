@@ -1,0 +1,115 @@
+@import "styles/Mixin.scss";
+
+.Slogan {
+  width: 100%;
+  height: 560px;
+  position: relative;
+  box-sizing: border-box;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skew(0deg, 8deg);
+  margin-top: -40px;
+
+  @include small {
+    transform: skew(0deg, 8deg);
+    margin-top: -54px;
+  }
+
+  @include medium {
+    height: 862px;
+    transform: skew(0deg, 8deg);
+    margin-top: -71px;
+  }
+
+  @include large {
+    transform: skew(0deg, 8deg);
+    margin-top: -84px;
+  }
+
+  @include extraLarge {
+    transform: skew(0deg, 8deg);
+    margin-top: -176px;
+  }
+
+  > .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: skew(0deg, -8deg);
+    margin-top: 13rem;
+
+    @include small {
+      transform: skew(0deg, -8deg);
+      margin-top: 5rem;
+      justify-content: space-evenly;
+      flex-direction: initial;
+    }
+
+    @include medium {
+      transform: skew(0deg, -8deg);
+      margin-top: 7rem;
+    }
+
+    @include large {
+      transform: skew(0deg, -8deg);
+      margin-top: 7rem;
+    }
+
+    @include extraLarge {
+      min-width: 1200px;
+      max-width: 1440px;
+      transform: skew(0deg, -8deg);
+      margin-top: 14rem;
+    }
+
+    > .text {
+      width: 100%;
+      margin: 0 10px 2rem 10px;
+      font-family: montserratextra_bold;
+      font-size: 40px;
+      font-weight: 800;
+      text-align: center;
+      color: #ffffff;
+
+      @include small {
+        margin-left: 3rem;
+        font-weight: 900;
+        font-size: 40px;
+        text-align: right;
+        width: min-content;
+      }
+      @include medium {
+        font-size: 56px;
+      }
+      @include large {
+        font-size: 56px;
+        width: 440px;
+      }
+    }
+
+    > .tennis-ball-image {
+      width: 80%;
+      height: 304px;
+      position: relative;
+      bottom: 60px;
+      background-image: url("/images/tennis-ball.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      @include small {
+        bottom: 10px;
+        position: initial;
+        width: 360px;
+        height: 462px;
+      }
+
+      @include medium {
+        width: 590px;
+      }
+    }
+  }
+}

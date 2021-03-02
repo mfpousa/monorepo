@@ -1,0 +1,332 @@
+@import "styles/Mixin.scss";
+
+.LiveGames {
+  position: relative;
+  transform: skew(0deg, 8deg);
+  padding: 5rem 0;
+
+  @include small {
+    padding: 5rem 0;
+  }
+
+  @include medium {
+    padding: 3rem 0 5rem 0;
+  }
+
+  @include large {
+    position: relative;
+    padding: 10rem 0;
+  }
+
+  > .wrapper {
+    display: flex;
+    position: relative;
+    transform: skew(0deg, -8deg);
+    width: 100vw;
+    max-width: 767px;
+    box-sizing: border-box;
+    padding: 0 19px;
+
+    @include small {
+      margin: 0 auto;
+      padding: 0 69px 2rem 69px;
+    }
+
+    @include medium {
+      padding: 0 69px;
+    }
+
+    @include large {
+      min-width: 992px;
+      max-width: 1440px;
+      padding: 0 120px;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    @include extraLarge {
+      min-width: 1200px;
+      max-width: 1440px;
+    }
+
+    > .container {
+      position: relative;
+      margin-top: 18rem;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-evenly;
+
+      @include small {
+        min-width: 320px;
+        max-width: 767px;
+        margin-top: 18em;
+      }
+      @include medium {
+        margin-top: 20rem;
+      }
+      @include large {
+        position: relative;
+        width: 520px;
+        height: 100%;
+        margin-top: 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+      }
+      > .description {
+        margin-bottom: 2.5rem;
+
+        > .title {
+          font-family: montserratextra_bold;
+          font-size: 2.5rem;
+          font-weight: 800;
+          color: black;
+          margin-bottom: 20px;
+          text-align: center;
+          line-height: 1.25;
+
+          @include small {
+            font-size: 3.5rem;
+          }
+
+          @include large {
+            text-align: left;
+          }
+        }
+
+        > .text {
+          font-family: montserratmedium;
+          font-size: 1rem;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.25;
+          letter-spacing: normal;
+          text-align: center;
+          color: black;
+
+          @include large {
+            font-family: montserratsemi_bold;
+            text-align: left;
+            font-size: 1.25rem;
+            font-weight: 600;
+          }
+        }
+      }
+
+      > .sports {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+        @include large {
+          margin: 0;
+          padding: 0;
+        }
+
+        > li {
+          width: 100%;
+          height: 98px;
+          display: flex;
+          flex-flow: column;
+          justify-content: space-around;
+          align-items: center;
+          background-color: rgba(228, 230, 230, 0.3);
+          margin: 3px;
+
+          @include small {
+            width: 160px;
+            height: 138px;
+          }
+
+          @include medium {
+            &:first-child {
+              margin-left: 0;
+            }
+
+            margin: 37px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+
+          > .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 30px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            @include small {
+              width: 100%;
+              height: 60px;
+            }
+
+            @include large {
+              width: 100%;
+              height: 60px;
+            }
+
+            .Icon {
+              height: 40px;
+
+              @include small {
+                width: 900px;
+                height: 100px;
+              }
+            }
+          }
+
+          > .text {
+            font-family: montserratbold;
+            font-size: 0.875rem;
+            font-weight: bold;
+            color: black;
+
+            @include small {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      > .games {
+        display: flex;
+        flex-direction: column;
+
+        @include small {
+          flex-direction: initial;
+        }
+
+        > .more {
+          margin-top: 40px;
+          text-align: center;
+          display: inline-block;
+
+          @include small {
+            text-align: center;
+            margin-right: 2.6rem;
+            margin-top: 2.5rem;
+          }
+
+          > .before {
+            width: fit-content;
+            font-size: 16px;
+            font-weight: 500;
+            font-style: italic;
+            color: black;
+            text-align: start;
+            position: relative;
+            left: 65px;
+
+            @include small {
+              position: initial;
+              text-align: initial;
+              font-size: 18px;
+            }
+          }
+          > .text {
+            font-size: 100px;
+            font-weight: 900;
+            line-height: 84px;
+            font-style: italic;
+            font-family: montserratblack_italic;
+            color: black;
+            display: inline-block;
+            position: relative;
+            left: 14px;
+
+            @include small {
+              font-size: 100px;
+              position: initial;
+              text-align: initial;
+            }
+          }
+          > .after {
+            font-size: 16px;
+            font-weight: 500;
+            font-style: italic;
+            color: black;
+            display: inline-block;
+            position: relative;
+            left: 14px;
+
+            @include small {
+              font-size: 18px;
+              position: initial;
+              text-align: initial;
+            }
+          }
+        }
+        a {
+          text-align: center;
+          display: inline-block;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          height: 46px;
+          margin: 20px 0;
+
+          @include small {
+            display: flex;
+            align-self: flex-end;
+            flex: 1;
+            margin-right: 0;
+            height: 60px;
+          }
+
+          @include large {
+            flex: 1;
+            align-self: flex-end;
+            text-align: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            height: 60px;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    > .sports-image {
+      position: absolute;
+      background-image: url("/images/sports.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      max-width: 55%;
+      height: 230px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      z-index: -1;
+
+      @include medium {
+        top: 0;
+        height: 290px;
+      }
+
+      @include large {
+        width: 32vw;
+        margin: 0;
+        z-index: -1;
+        position: initial;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: initial;
+      }
+    }
+  }
+}

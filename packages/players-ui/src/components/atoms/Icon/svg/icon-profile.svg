@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20">
+    <defs>
+        <path id="lajutwmsta" d="M9.996 3.333c-3.667 0-6.663 2.981-6.663 6.663 0 3.667 2.981 6.663 6.663 6.663 3.682 0 6.663-2.996 6.663-6.663 0-3.667-2.996-6.663-6.663-6.663zm0 3.414c1.133 0 2.072.924 2.072 2.072 0 1.132-.924 2.071-2.072 2.071-1.148 0-2.072-.939-2.072-2.086 0-1.133.94-2.057 2.072-2.057zm0 8.54c-1.267 0-2.43-.447-3.339-1.192.954-1.043 2.117-1.625 3.339-1.625s2.4.567 3.339 1.625c-.91.745-2.072 1.192-3.339 1.192z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g transform="translate(-40 -1040) translate(20 20) translate(0 869) translate(0 131) translate(20 20)">
+                            <mask id="m5tjyrxu2b" fill="#fff">
+                                <use xlink:href="#lajutwmsta"/>
+                            </mask>
+                            <use fill="#000" fill-rule="nonzero" xlink:href="#lajutwmsta"/>
+                            <g fill="currentColor" mask="url(#m5tjyrxu2b)">
+                                <path d="M0 0H20V20H0z"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,127 @@
+.LocationAndFacilities {
+  margin-top: 2rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid black;
+
+  > .title {
+    font-family: montserratextra_bold;
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  > .contact-us {
+    margin-top: 2.5rem;
+    padding: 2.5rem;
+    display: flex;
+
+    box-shadow: 0 10px 20px 0 rgba(141, 151, 158, 0.2);
+    background-color: #ffffff;
+
+    > .map {
+      width: 23.5rem;
+      height: 23.5rem;
+      background: url("/images/map-placeholder.png");
+      border: 0.3rem solid black;
+      box-shadow: 1rem 0.75rem 0 black;
+      margin-bottom: 0.8rem;
+    }
+
+    > .details {
+      flex: 1;
+      margin-left: 5rem;
+      display: flex;
+      flex-flow: column;
+
+      > .title {
+        font-family: montserratbold;
+        font-size: 24px;
+      }
+
+      > .contact-details {
+        flex: 1;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        > div {
+          & + div {
+            margin-top: 1.2rem;
+          }
+
+          > * {
+            vertical-align: middle;
+          }
+
+          > .icon {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 2.5rem;
+
+            width: 3.5rem;
+            height: 3.5rem;
+            box-sizing: border-box;
+            border: 0.15rem solid black;
+          }
+
+          > span {
+            font-family: montserratbold;
+            font-size: 18px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      > .links {
+        display: flex;
+
+        > a {
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  > .flex {
+    margin-top: 2.5rem;
+    display: flex;
+
+    > .facilities {
+      flex: 1;
+      max-width: 24.5rem;
+
+      background-color: #f8f8f8;
+      padding: 2.5rem;
+
+      > .title {
+        font-family: montserratbold;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      > .facilities-container {
+        margin: 0;
+        padding: 0;
+        margin-top: 1.25rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 35px;
+
+        > .facility {
+          min-width: 6rem;
+          margin: 1.25rem 0;
+          display: grid;
+          grid-template-columns: 24px auto;
+          grid-column-gap: 20px;
+
+          > span {
+            font-family: montserratmedium;
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

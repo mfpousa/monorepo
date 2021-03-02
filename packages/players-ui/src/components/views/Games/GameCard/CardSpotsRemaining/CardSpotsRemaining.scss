@@ -1,0 +1,92 @@
+@import "styles/Mixin.scss";
+
+.CardSpotsRemaining {
+  width: 100%;
+  background: transparent;
+  border: 2px #000 solid;
+  box-sizing: border-box;
+
+  > .btn-toggle-players-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 18px;
+
+    > .players-remaining {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > h3 {
+        font-family: montserratbold;
+        font-size: 24px;
+        line-height: 1.17;
+        margin-right: 10px;
+      }
+
+      > p {
+        max-width: 80px;
+        display: block;
+        font-family: montserratregular;
+        font-size: 16px;
+        line-height: 1.25;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        @include small {
+          max-width: 200px;
+        }
+      }
+    }
+
+    > .icon-container {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  > .spots-remaining {
+    padding: 0px 20px 20px 20px;
+
+    @include large {
+      padding: 0px 18px 18px 18px;
+    }
+
+    > .gender-info {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 22px;
+      margin-bottom: 20px;
+
+      > .gender-label {
+        font-family: montserratbold;
+        font-size: 18px;
+        font-weight: bold;
+        color: #5C6466;
+        margin-right: 10px;
+      }
+
+      > .gender-value {
+        padding: 5px 30px;
+        transform: skew(-20deg);
+        background: #253237;
+
+        > p {
+          text-transform: capitalize;
+          font-family: montserratbold;
+          font-size: 16px;
+          font-weight: bold;
+          color: #fff;
+          transform: skew(20deg);
+        }
+      }
+    }
+  }
+}

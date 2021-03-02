@@ -1,0 +1,499 @@
+@import "styles/Mixin.scss";
+
+.Header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  height: 166px;
+
+  &.notFixed {
+    position: relative;
+  }
+
+  &.grounded {
+    position: relative;
+  }
+
+  &:not(.grounded) {
+    height: 0;
+  }
+
+  &.scrolled {
+    > .wrapper {
+      background-color: black;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+      &.active {
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+
+      @include medium {
+        background-color: rgba(255, 255, 255, 0.9);
+        clip-path: none;
+      }
+      > .container {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          bottom: -22px;
+          left: 40px;
+          right: 40px;
+          height: 40px;
+          background-color: rgba(0, 0, 0, 0.2);
+          border-radius: 50%;
+          filter: blur(20px);
+        }
+      }
+    }
+    &.gray {
+      > .wrapper {
+        background-color: black;
+        &.active {
+          background-color: rgba(255, 255, 255, 0.9);
+        }
+        @include medium {
+          background-color: rgba(255, 255, 255, 0.9);
+        }
+        > .container {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            bottom: -22px;
+            left: 40px;
+            right: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            filter: blur(20px);
+          }
+        }
+      }
+    }
+  }
+  &.scrolled,
+  &.white,
+  &.transparent,
+  &.gray {
+    > .wrapper {
+      > .container {
+        > .containerLogoIcon {
+          > .logo {
+            font-family: montserratblack_italic;
+            color: black;
+          }
+          > .icon {
+            font-family: montserratblack_italic;
+            color: black;
+          }
+        }
+
+        > .items {
+          a {
+            font-family: montserratmedium;
+            color: black;
+          }
+        }
+      }
+    }
+
+    &.active {
+      > .wrapper {
+        > .container {
+          > .containerLogoIcon {
+            > .logo {
+              font-family: montserratblack_italic;
+              color: white;
+            }
+            > .icon {
+              font-family: montserratblack_italic;
+              color: white;
+            }
+          }
+
+          > .items {
+            a {
+              font-family: montserratmedium;
+              color: white;
+
+              &.highlighted {
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.transparent {
+    background: transparent;
+  }
+
+  &.scrolled:not(.grounded) {
+    > .wrapper {
+      > .container {
+        padding-top: 62px;
+
+        @include small {
+          padding: 62px 20px 40px 20px;
+        }
+
+        @include large {
+          padding: 62px 120px;
+        }
+
+        @include extraLarge {
+          padding: 62px 120px;
+        }
+      }
+    }
+  }
+
+  &.initialPos,
+  &.gray {
+    top: 0;
+  }
+
+  &.scrollPos {
+    top: -225px;
+    transition: top 1.5s;
+  }
+
+  &.scrollPos.active {
+    top: 0;
+    transition: top 1.5s;
+  }
+
+  &.scrollUp {
+    transition: top 1.5s;
+    top: 0;
+    > .wrapper {
+      background-color: black;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+
+      @include medium {
+        background-color: rgba(255, 255, 255, 0.9);
+        clip-path: none;
+      }
+
+      > .container {
+        > .containerLogoIcon {
+          > .logo {
+            font-family: montserratblack_italic;
+            color: white;
+            @include medium {
+              color: black;
+            }
+          }
+          > .icon {
+            font-family: montserratblack_italic;
+            color: white;
+            @include medium {
+              color: black;
+            }
+          }
+        }
+        > .items {
+          a {
+            font-family: montserratmedium;
+            color: white;
+            @include medium {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.active {
+    .wrapper {
+      position: relative;
+      z-index: 2;
+      > .container {
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+
+        > .items {
+          margin-left: 10px;
+
+          div[class*="items__"] {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+          }
+          > .items__areYouVenue {
+            grid-area: areYouVenue;
+          }
+          > .items__games {
+            grid-area: games;
+          }
+          > .items__venues {
+            grid-area: venues;
+          }
+          > .items__divider {
+            grid-area: divider;
+          }
+          > .items__signUp {
+            grid-area: signUp;
+          }
+          > .items__login {
+            grid-area: login;
+          }
+          > .items__flag {
+            grid-area: flag;
+            justify-self: end;
+            > .menu-lang {
+              > li {
+                list-style: none;
+                button {
+                  background-color: transparent;
+                  cursor: pointer;
+                }
+                img {
+                  width: 54px;
+                  height: 38px;
+                }
+              }
+              .sub-menu {
+                display: none;
+              }
+            }
+
+            &:hover {
+              .sub-menu {
+                display: block;
+                position: absolute;
+                > ul {
+                  .sub-menu__item {
+                    margin-top: 20px;
+                    list-style: none;
+                  }
+                }
+              }
+            }
+          }
+
+          display: grid;
+          grid-template-columns: 266px auto;
+          grid-template-rows: auto;
+          grid-template-areas:
+            "areYouVenue flag"
+            "games ."
+            "venues . "
+            "divider divider"
+            "signUp ."
+            "login .";
+          width: 100%;
+          margin-top: 45px;
+          margin-bottom: 30px;
+
+          > a {
+            font-size: 16px;
+            font-weight: 500;
+            margin-left: 10px;
+            margin-bottom: 40px;
+          }
+
+          > .items__divider {
+            width: 100%;
+            border: 1px solid white;
+            margin-bottom: 40px;
+          }
+
+          > .items__container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+
+            > a {
+              margin-right: 63px;
+            }
+          }
+        }
+      }
+    }
+
+    > .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      opacity: 0.95;
+    }
+  }
+
+  &.loggedIn {
+    > .wrapper {
+      > .container {
+        > .items {
+          @include medium {
+            grid-template-columns: repeat(5, auto);
+            > .items__areYouVenue {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.loggedIn.active {
+    > .wrapper {
+      > .container {
+        > .items {
+          > .items__areYouVenue {
+            display: none;
+          }
+          > .items__logOut {
+            grid-area: logOut;
+          }
+
+          grid-template-areas:
+            "areYouVenue ."
+            "games flag"
+            "venues . "
+            "divider divider"
+            "logOut ."
+            "login .";
+        }
+      }
+    }
+  }
+
+  > .wrapper {
+    transition: background 1.5s;
+    > .container {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 60px 20px 50px 20px;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      transition: padding 1s;
+
+      @include small {
+        padding: 70px 20px;
+      }
+
+      @include large {
+        margin: 0 auto;
+        padding: 70px 120px;
+        max-width: 1440px;
+      }
+
+      > .containerLogoIcon {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @include medium {
+          width: 10%;
+        }
+
+        > .logo {
+          font-family: montserratblack_italic;
+          width: 85px;
+          height: fit-content;
+          font-size: 20px;
+          font-weight: 900;
+          font-style: italic;
+          color: #ffffff;
+          text-decoration: none;
+
+          justify-content: left;
+
+          @include large {
+            position: initial;
+          }
+        }
+        > .icon {
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          > svg.Icon {
+            overflow: initial;
+          }
+        }
+      }
+
+      > .items {
+        display: none;
+
+        @include medium {
+          display: grid;
+          grid-template-columns: repeat(6, auto);
+          align-items: center;
+          justify-content: end;
+          column-gap: 40px;
+          width: 90%;
+          > .items__divider,
+          .arrow-icon {
+            display: none;
+          }
+
+          > .items__flag {
+            > .menu-lang {
+              > li {
+                list-style: none;
+                button {
+                  background-color: transparent;
+                  cursor: pointer;
+                }
+                img {
+                  width: 54px;
+                  height: 38px;
+                }
+              }
+              .sub-menu {
+                display: none;
+              }
+            }
+
+            &:hover {
+              .sub-menu {
+                display: block;
+                position: absolute;
+                > ul {
+                  .sub-menu__item {
+                    margin-top: 20px;
+                    list-style: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+        a {
+          font-family: montserratmedium;
+          color: white;
+
+          &.highlighted {
+            color: black;
+            font-family: montserratsemi_bold;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 12px 35px;
+          }
+        }
+      }
+    }
+  }
+}
+.header-separator {
+  background: transparent;
+  height: 166px;
+  width: 100%;
+}

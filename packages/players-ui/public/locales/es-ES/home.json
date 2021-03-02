@@ -1,0 +1,36 @@
+{
+  "yourSport": "TU DEPORTE,",
+  "yourWay": "A TU MANERA",
+
+  "getStarted": "Empieza",
+  "findPeople": "Quieres hacer deporte? Mira juegos en tu área. Quieres reservar un lugar? Mira las instalaciones cerca de ti",
+  "joinGame": "Únete a un juego",
+  "bookVenue": "Reserva una instalación",
+
+  "whichOne": "¿QUÉ DEPORTE HACES?",
+  "playAnySports": "En iBookWePlay, puedes encontrar jugadores y practicar cualquier deporte que involucre a más de un jugador! Nuestra plataforma personalizará la experiencia en función del deporte. ¿Que estás esperando?",
+  "and": "Y",
+  "numberOfSports": "56",
+  "more": "Más",
+  "checkGamesNear": "Mira los juegos cerca de ti",
+
+  "venuesDirectory": "INSTALACIONES",
+  "venuesDescription" : "Explora, revisa y reserva* el lugar que mejor funciona para ti. Con nuestro sistema de filtrado mejorado, encontrarás exactamente el lugar que se adapte a tus necesidades, ya sea la ubicación, las comodidades, la disponibilidad de las pistas y mucho más.",
+  "featureVenues": "Instalaciones destacadas",
+  "checkAllVenues": "Ver todas las intalaciones",
+
+  "why": "POR QUÉ",
+  "smartRecommendations": "Recomendaciones inteligentes",
+  "smartRecommendationsDesc": "Recomendación de oponentes proactiva, basada en tus preferencias",
+  "smartSportAssistant": "Asistente Inteligente",
+  "smartSportAssistantDesc": "Encuentra información de los instalaciones, reserva y paga en pocos clicks, ó utiliza el asistente virtual inteligente",
+  "smartGames": "Juegos inteligente",
+  "smartGamesDesc": "Reta y califica a otros jugadores, guarda los resultados y vota las habilidades",
+
+  "areYouAVenue": "¿INSTALACIÓN DEPORTIVA?",
+  "areYouAVenueDesc": "Accede a la plataforma para instalaciones. Explora los motores inteligentes y vea como el motor de predicción ayuda a incrementar la ocupacionalidad. Optimiza las tarifas y obten información del negocio con el panel de control.",
+  "venueFeatureOne": "Motores inteligentes",
+  "venueFeatureTwo": "Métricas inteligente",
+  "venueFeatureThree": "Reservas inteligentes",
+  "exploreVenuePortal": "Explora la plataforma de instalaciones"
+}

@@ -1,0 +1,44 @@
+.FeatureBar {
+  margin-top: 40px;
+  height: 3.5rem;
+  padding: 0 1rem 0 3rem;
+  background: linear-gradient(107deg, white 1rem, #f8f8f8 1rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > .sports {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    > .SportIcon {
+      border-right: 2px solid;
+      padding-right: 20px;
+      > .remaining-sports {
+        display: none;
+      }
+    }
+
+    > .Icon {
+      margin-left: 40px;
+    }
+  }
+
+  > .rating {
+    > span {
+      font-family: montserratbold;
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+
+    > * {
+      vertical-align: middle;
+    }
+
+    > .Icon {
+      margin-top: -0.1rem;
+    }
+  }
+}

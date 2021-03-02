@@ -1,0 +1,246 @@
+@import "styles/Mixin.scss";
+
+.WhyUs {
+  transform: skew(0deg, 8deg);
+  padding: 3rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  @include medium {
+    padding: 5rem 0;
+  }
+
+  @include large {
+    padding: 17rem 0;
+  }
+
+  @include extraLarge {
+    padding: 8rem 0;
+    height: 1040px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  > .wrapper {
+    transform: skew(0deg, -8deg);
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 576px;
+    padding: 0 19px 3rem 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include small {
+      padding: 0 69px;
+    }
+
+    @include medium {
+      flex-direction: row;
+      min-width: 768px;
+      max-width: 991px;
+      padding: 0 120px;
+    }
+
+    @include large {
+      min-width: 992px;
+      max-width: 1199px;
+      padding: 0 90px;
+      flex-direction: row;
+    }
+
+    @include extraLarge {
+      padding: 0 120px;
+      min-width: 1200px;
+      max-width: 1440px;
+    }
+
+    > .reasons {
+      order: 2;
+      width: 100%;
+
+      @include medium {
+        order: 1;
+        width: 47%;
+        padding-right: 2em;
+      }
+
+      @include large {
+        order: 1;
+        width: 53%;
+      }
+
+      > .reason + .reason {
+        margin-top: 35px;
+      }
+
+      > .reason {
+        display: flex;
+        align-items: center;
+
+        > .icon + .description,
+        > .description + .icon {
+          margin-left: 5px;
+
+          @include small {
+            margin-left: 10px;
+          }
+
+          @include large {
+            margin-left: 20px;
+          }
+        }
+
+        > .icon {
+          box-sizing: border-box;
+          width: 55px;
+          height: 55px;
+          background: white;
+          box-shadow: 0 2px 60px 0 rgba(0, 0, 0, 0.05);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          @include large {
+            width: 80px;
+            height: 80px;
+          }
+
+          > svg {
+            width: 55px;
+            height: 55px;
+            &:first-child {
+              width: 55px;
+            }
+
+            @include large {
+              width: 96px;
+              height: 96px;
+            }
+          }
+        }
+
+        > .description {
+          width: 100%;
+
+          @include medium {
+            width: 307px;
+          }
+
+          @include large {
+            width: 280px;
+          }
+          > .title {
+            font-size: 24px;
+            font-family: montserratbold;
+            font-weight: bold;
+            line-height: 1.17;
+            margin-bottom: 0.5em;
+
+            @include large {
+              font-size: 20px;
+            }
+          }
+
+          > .text {
+            font-size: 16px;
+            font-family: montserratregular;
+            font-weight: 500;
+            line-height: 20px;
+
+            @include large {
+              font-size: 20px;
+              font-family: montserratregular;
+              font-weight: 500;
+            }
+
+            @include extraLarge {
+              font-size: 18px;
+              font-family: montserratregular;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+
+    > .description {
+      order: 1;
+      flex: 1;
+      padding-top: 4rem;
+
+      @include large {
+        transform: rotate(-90deg);
+      }
+
+      > .pre-title {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: montserratregular;
+
+        @include large {
+          font-size: 20px;
+        }
+
+        @include extraLarge {
+          font-size: 40px;
+          font-weight: 800;
+          line-height: 1.25;
+          font-family: montserratextra_bold;
+        }
+      }
+
+      > .title {
+        font-family: montserratblack;
+        font-size: 56px;
+        font-weight: 900;
+        margin-bottom: 0.714em;
+
+        @include small {
+          font-size: 86px;
+        }
+
+        @include large {
+          font-size: 95px;
+        }
+
+        @include extraLarge {
+          font-size: 120px;
+        }
+      }
+    }
+  }
+  > .dust-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 116vw;
+    height: 133vw;
+    background-image: url(/images/dust-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @include small {
+      width: 86vw;
+      height: 100vw;
+    }
+
+    @include medium {
+      width: 59vw;
+      height: 67vw;
+    }
+
+    @include large {
+      width: 68vw;
+      height: 78vw;
+    }
+
+    @include extraLarge {
+      width: 63vw;
+      height: 78vw;
+    }
+  }
+}

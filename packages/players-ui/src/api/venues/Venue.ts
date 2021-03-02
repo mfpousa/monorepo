@@ -1,0 +1,65 @@
+export interface Venue {
+  establishmentUuid: string;
+  name: string;
+  countryUuid: string;
+  countryDescription: string;
+  provinceUuid: string;
+  provinceDescription: string;
+  cityUuid: string;
+  cityDescription: string;
+  streetName: string;
+  streetType: string;
+  postalCode: string;
+  establishmentType: string;
+  phoneNumber: string;
+  email: string;
+  webSiteUrl: string;
+  reserveInfo: string;
+  googleMapsLink: string;
+  hasChangingRooms: boolean;
+  hasShowers: boolean;
+  hasLockers: boolean;
+  hasParking: boolean;
+  hasCafeBar: boolean;
+  hasSteam: boolean;
+  hasSauna: boolean;
+  hasJacuzzi: boolean;
+  hasSolarium: boolean;
+  hasPadel: boolean;
+  hasBaseball: boolean;
+  hasBasketball: boolean;
+  hasBoxing: boolean;
+  hasCricket: boolean;
+  hasIceHockey: boolean;
+  hasRugby;
+  hasTableTennis: boolean;
+  hasTennis: boolean;
+  hasBadminton: boolean;
+  hasSquash: boolean;
+  hasNetball: boolean;
+  hasGolf;
+  hasFootball: boolean;
+  hasAmericanFotball: boolean;
+  hasFutsal: boolean;
+  hasHandBall: boolean;
+  hasVollyball: boolean;
+  hasFieldHockey: boolean;
+  sortOrder: number;
+  createdAt: string;
+  updatedAt: string;
+  enabled: boolean;
+  totalReviews: number;
+  averageRating: number;
+  onlineBookingEnabled: boolean;
+  organizationUuid: string;
+  isFavorite: boolean;
+}
+
+export interface FilterType {
+  name?: string;
+  establishmentUuid?: string;
+  establishmentType?: string;
+  countryUuid?: string;
+  provinceUuid?: string;
+  cityUuid?: string;
+}

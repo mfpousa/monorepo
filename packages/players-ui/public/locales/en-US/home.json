@@ -1,0 +1,36 @@
+{
+  "yourSport": "YOUR SPORT,",
+  "yourWay": "YOUR WAY",
+
+  "getStarted": "Get started",
+  "findPeople": "Wants to play sports? See all games happening in your area. Looking to book a venue? See all venues near to you",
+  "joinGame": "Join a game",
+  "bookVenue": "Book a venue",
+
+  "whichOne": "WHICH ONE DO YOU PLAY?",
+  "playAnySports": "On iBook WePlay, you can find players to play any sport that involve more than one player! Our platform will customise the experience based on the sport. What are you waiting for?",
+  "and": "And",
+  "numberOfSports": "56",
+  "more": "More",
+  "checkGamesNear": "See games near you",
+
+  "venuesDirectory": "VENUES DIRECTORY",
+  "venuesDescription" : "Browse, review and book* the venue that works best for you. With our enhanced filtering system, you will find exactly the venue that suits your needs whether it’s location, facilities, court availability and much more",
+  "featureVenues": "Featured venues",
+  "checkAllVenues": "Check all venues",
+
+  "why": "WHY",
+  "smartRecommendations": "Smart recommendations",
+  "smartRecommendationsDesc": "Proactively recommendation of opponents based on player preferences",
+  "smartSportAssistant": "Smart assistant",
+  "smartSportAssistantDesc": "Find centres information, book and pay courts in few clicks or use our smart virtual assistant",
+  "smartGames": "Smart games",
+  "smartGamesDesc": "Challenge and rate other players, set game results and endorse skills",
+
+  "areYouAVenue": "ARE YOU A VENUE?",
+  "areYouAVenueDesc": "Check out the venue platform. Explore our smart engines, and see how the prediction engine, can help to improve occupancy, use the price engine, to optimise your resources, get the deep insights over your business with our streaming dashboard.",
+  "venueFeatureOne": "Smart engines",
+  "venueFeatureTwo": "Smart metrics",
+  "venueFeatureThree": "Smart bookings",
+  "exploreVenuePortal": "Explore the venue portal"
+}

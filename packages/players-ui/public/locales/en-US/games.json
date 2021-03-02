@@ -1,0 +1,21 @@
+{
+  "title": "Live Games",
+  "description": "Find people who have posted games and need players, or create your own game and invite others.",
+  "loadMore": "Load More",
+  "createGameBtn": "Create Game",
+  "textFieldPlaceholder": "Search games, people, and sport centre...",
+  "sortDropdown": "Sort By",
+  "filterBtn": "Filters",
+  "playersBtnText": "Players",
+  "genderText": "Gender",
+  "venueTag": "Venue",
+  "levels": "Levels",
+  "daysIn": "In",
+  "daysTextPlural": "days",
+  "daysTextSingular": "day",
+  "daysTextToday": "Today",
+  "spotsRemainingText": "spots remaining",
+  "emptyText": "Empty",
+  "joinBtnText": "Join",
+  "clearFiltersBtn": "Clear filters"
+}

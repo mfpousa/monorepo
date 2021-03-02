@@ -1,0 +1,59 @@
+@import "styles/Mixin.scss";
+
+.FormTextField {
+  width: 100%;
+  box-sizing: border-box;
+
+  > .label {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #5c6466;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+  }
+
+  > input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 46px;
+    background: #f8f8f8;
+    border: none;
+    outline: none;
+    flex: 1;
+
+    font-family: montserratmedium;
+    font-size: 18px;
+    font-weight: 500;
+    color: #5c6466;
+
+    @include small {
+      padding: 1rem 0 1rem 1rem;
+    }
+
+    @include large {
+      height: 60px;
+      padding: 1rem;
+    }
+
+    &:not(:placeholder-shown) {
+      color: black;
+    }
+  }
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
+
+  input:-webkit-autofill:focus {
+    -webkit-text-fill-color: black;
+  }
+
+  > button {
+    background-color: #fff;
+    cursor: pointer;
+  }
+}

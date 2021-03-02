@@ -1,0 +1,71 @@
+@import "styles/Mixin.scss";
+@import "styles/Variables.scss";
+
+.PlaceHolderVenues {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  @include extraLarge {
+    flex-wrap: wrap;
+  }
+
+  .placeholderCard {
+    display: flex;
+    flex-flow: column;
+    width: 243px;
+    height: 534px;
+    background-color: #ffffff;
+    padding: 0 15px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+
+    > .image {
+      height: 370px;
+
+      > .venue-types {
+        margin-top: 40px;
+        font-size: 20px;
+        height: 60px;
+        width: 220px;
+        background-color: $color-grey3;
+        clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+      }
+      > .box {
+        margin-top: 30px;
+        height: 207px;
+        width: 243px;
+        background-color: $color-grey4;
+      }
+    }
+
+    > .line1 {
+      margin-bottom: 22px;
+      height: 18px;
+      width: 241px;
+      background-color: $color-grey2;
+    }
+
+    > .line2 {
+      margin-bottom: 22px;
+      height: 18px;
+      width: 139px;
+      background-color: $color-grey1;
+    }
+
+    > .tails {
+      display: flex;
+      border-top: 1px solid black;
+      justify-content: space-between;
+      padding-top: 30px;
+      max-height: 40px;
+
+      > .line3 {
+        margin-bottom: 30px;
+        height: 18px;
+        width: 70px;
+        background-color: $color-grey1;
+      }
+    }
+  }
+}
