@@ -7,7 +7,7 @@
     "build": "webpack",
     "cosmos": "cosmos",
     "cosmos:export": "cosmos-export",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo Lib testing started"
   },
   "repository": {
     "type": "git",
